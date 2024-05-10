@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="./style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css">
   <title>Frontend Mentor | [Blogr]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,28 +17,75 @@
   </style>
 </head>
 <body>
-  
-  <!-- Product
+  <header class="prim-nav">
+    <nav class="prim-nav__nav">
 
-  Overview
-  Pricing
-  Marketplace
-  Features
-  Integrations
+      <div class="prim-nav__mob-navbar">
+        <div class="prim-nav__logo-container">
+          <img class="prim-nav__logo" src="/public/images/logo.svg" alt="logo">
+        </div>
+        <div class="prim-nav__nav-toggle" id="nav-toggle">
+          <i class="ri-menu-line nav__burger"></i>
+          <i class="ri-close-line nav__close"></i>
+        </div>
+      </div>
+      
+      <div class="prim-nav__menu" id="prim-nav__menu" >
+        <ul class="prim-nav__list" >
+          <li>
+            <button type="button" class="prim-nav__dropdown" data-id="1">
+              <span>Product</span>    <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle" data-id="1" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+            </button>
+          
+            <ul class="prim-nav__dropdown-list" id="1">
+              <li><a class="prim-nav__dropdown-link" href="#">Overview</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Pricing</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Marketplace</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Features</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Integrations</a></li>
+            </ul>
+          </li>
 
-  Company
+          <li>
+            <button type="button" class="prim-nav__dropdown" data-id="2">
+              <span>Company</span> <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle" data-id="2" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+            </button>
+          
+            <ul class="prim-nav__dropdown-list" id="2">
+              <li><a class="prim-nav__dropdown-link" href="#">About</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Team</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Blog</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li>
+            <button type="button" class="prim-nav__dropdown" data-id="3">
+              <span>Connect</span> <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle" data-id="3" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+            </button>
+          
+            <ul class="prim-nav__dropdown-list" id="3">
+              <li><a class="prim-nav__dropdown-link" href="#">Contact</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Newsletter</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>  
+        <hr>
+          <div class="prim-nav__button-container">
+            <a class="button" href="">Login</a>
+            <a class="button button--gradient button--text-light" href="">Sign Up</a>
+          </div>    
+      </div>
+      
+      
+    </nav>
+  </header>
+  <section class="intro">
 
-  About
-  Team
-  Blog
-  Careers
+  </section>
 
-  Connect
 
-  Contact
-  Newsletter
-  LinkedIn
-  
+  <!-- 
   Login
   Sign Up
 
@@ -96,5 +145,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

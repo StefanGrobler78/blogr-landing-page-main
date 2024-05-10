@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+:root {
+/* ## Colors */
+
+/* ### Primary */
+--light-red: hsl(356, 100%, 66%);/* (CTA text) */
+--very-light-red: hsl(355, 100%, 74%);/* (CTA hover background) */
+--very-dark-blue: hsl(208, 49%, 24%);/* (headings) */
+
+/* ### Neutral */
+
+--white: hsl(0, 0%, 100%);/* (text) */
+--grayish-blue: hsl(240, 2%, 79%);/* (footer text) */
+--very-dark-grayish-blue: hsl(207, 13%, 34%);/* (body copy) */
+--very-dark-black-blue: hsl(240, 10%, 16%);/* (footer background) */
+
+/* ### Gradient */
+/* Background gradient - Intro/CTA mobile nav: */
+--very-light-red: hsl(13, 100%, 72%);
+--light-red: hsl(353, 100%, 62%);
+--gradient-intro: linear-gradient(to right, var(--very-light-red), var(--light-red));
+/* Background gradient - body: */
+--very-dark-gray-blue: hsl(237, 17%, 21%);
+--very-dark-desaturated-blue: hsl(237, 23%, 32%);
+
+
+--gradient-body: linear-gradient(to right, var(--very-dark-gray-blue), var(--very-dark-desaturated-blue));
+/* ## Typography */
+--ff-prim: "Ubuntu", sans-serif;
+--ff-sec: "Overpass", sans-serif;
+
+/* - Font size */
+--fs-400: 16px;
+
+}
+*, *::after, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+button{
+    font-size: inherit;
+}
+body{
+    background-color: var(--white);
+    font-family: var(--ff-prim);
+    font-size: var(--fs-400);
+}
+ul{
+    list-style: none;
+}
+/* Primary Navigation */
+.prim-nav{
+    padding-top: 2rem;
+    background: var(--gradient-intro);
+    height: 5rem;
+    outline: 2px solid greenyellow;
+}
+.prim-nav__mob-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.prim-nav__nav-toggle{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+}
+.nav__burger,
+.nav__close{
+    color: var(--white);
+    font-size: 1.5rem;
+    position: absolute;
+    transition: opacity .3s ease;
+}
+.nav__close{
+    opacity: 0;
+}
+.nav__burger{
+    opacity: 1;
+}
+.prim-nav__menu{
+    position: fixed;
+    top: 5rem;
+    right: 1rem;
+    left:1rem;
+    background-color: var(--white);
+    text-align: center;
+    transform: translateX(calc(100% + 1rem));
+    overflow: hidden;
+    transition: transform 400ms ease-in;
+    border-radius: .345rem;
+}
+.show-icon{
+    opacity: 0;
+}
+.show{
+    /* opacity: 0; */
+    transform: translateX(0);
+}
+.prim-nav__list{
+    width: 100%;
+    text-align: center;
+    padding-block: 1rem;
+}
+.prim-nav__dropdown{
+    background-color: var(--white);
+    padding-block: 1rem;
+    display: block;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    border: 0;
+    cursor: pointer;
+}
+.prim-nav__dropdown > span {
+    font-weight: 600;
+    margin-left: 1.2rem;
+}
+.iconToggle {
+    color: var(--light-red);
+    margin-left: .5rem;
+    transition: transform .4s;
+}
+.iconToggle--transform {
+    transform: rotate(0.5turn);
+}
+.prim-nav__dropdown-list{
+    width: calc(100% - 2rem);
+    margin-inline: auto;
+    border-radius: .345rem;
+    background-color: buttonface;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    /* transform: translateY(-10px);, transform .7s ease-in-out */
+    transition: opacity .3s ease-in-out, height .3s ease-in-out;
+}
+.toggle--dropdown{
+    opacity: 1;
+    height: 100%;
+}
+.prim-nav__dropdown-link{
+    text-decoration: none;
+    /* outline: 1px solid green; */
+    display: block;
+    /* background-color: antiquewhite; */
+    padding-block: 1rem;
+}
+hr{
+    width: calc(100% - 2rem);
+    background-color: buttonface;
+    height: 2px;
+    border: none;
+    margin-block: 1rem;
+    margin-inline: auto;
+}
+.prim-nav__button-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1rem;
+    font-size: var(--fs-400);
+    color: var(--white);
+    margin-block: 1rem;
+}
+.prim-nav__button-container .prim-nav__dropdown-link{
+    font-size: var(--fs-400);
+}
+.button {
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    max-width: fit-content;
+    font-size: var(--fs-400);
+    text-decoration: none;
+    min-width: 150px;
+}
+.button--text-light{
+    color: var(--white);
+}
+.button--gradient {
+    background: var(--gradient-intro);
+}
+
+
+
+
+.intro{
+    background: var(--gradient-intro);
+    min-height: 100vh;
+
+}
