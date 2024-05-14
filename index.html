@@ -19,20 +19,18 @@
 <body>
   <header class="prim-nav">
     <nav class="prim-nav__nav">
-
-      <div class="prim-nav__mob-navbar">
         <div class="prim-nav__logo-container">
           <img class="prim-nav__logo" src="/images/logo.svg" alt="logo">
         </div>
+        
         <div class="prim-nav__nav-toggle" id="nav-toggle">
           <i class="ri-menu-line nav__burger"></i>
           <i class="ri-close-line nav__close"></i>
         </div>
-      </div>
       
       <div class="prim-nav__menu" id="prim-nav__menu" >
         <ul class="prim-nav__list" >
-          <li>
+          <li class="prim-nav__dropdown-container">
             <button type="button" class="prim-nav__dropdown" data-id="1">
               <span>Product</span>    <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle" data-id="1" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
             </button>
@@ -46,7 +44,7 @@
             </ul>
           </li>
 
-          <li>
+          <li class="prim-nav__dropdown-container">
             <button type="button" class="prim-nav__dropdown" data-id="2">
               <span>Company</span> <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle" data-id="2" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
             </button>
@@ -58,7 +56,7 @@
               <li><a class="prim-nav__dropdown-link" href="#">Careers</a></li>
             </ul>
           </li>
-          <li>
+          <li class="prim-nav__dropdown-container">
             <button type="button" class="prim-nav__dropdown" data-id="3">
               <span>Connect</span> <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle" data-id="3" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
             </button>
@@ -72,8 +70,8 @@
         </ul>  
         <hr>
           <div class="prim-nav__button-container">
-            <a class="button" href="">Login</a>
-            <a class="button button--gradient button--text-light" href="">Sign Up</a>
+            <a class="button login__button" href="">Login</a>
+            <a class="button button--gradient button--text-light signup__button" href="">Sign Up</a>
           </div>    
       </div>
       
@@ -85,15 +83,11 @@
           <h1 class="intro__title">A modern publishing platform</h1>
           <p class="intro__subtitle">Grow your audience and build your online brand</p>
           <div class="intro__button-wrapper">
-            <a class="button button--bg-light button--text-red button--bdr-light" href="http://">Start for Free</a>
-            <a class="button button--text-light button--bdr-light" href="http://">Learn More</a>
+            <a class="button button--bg-light button--text-red button--bdr-light intro__start-button" href="http://">Start for Free</a>
+            <a class="button button--text-light button--bdr-light intro__lm-button" href="http://">Learn More</a>
           </div>
         </div>
-        <div class="intro__square-1">
-        </div>
-        <div class="intro__square-2">
-        </div>
-        <div class="intro__circle"></div>
+          <img class="intro__bg-image" src="/images/bg-pattern-intro-desktop.svg" alt="Intro" />
   </section>
   <main>
     <section class="design">
@@ -101,7 +95,7 @@
         <h2 class="design__heading">Designed for the future</h2>
         <div class="design__content-container">
           <div class="design__image-wrapper">
-        <img class="design__image" src="/images/illustration-editor-mobile.svg" alt="editor">
+        <img class="design__image" src="/images/illustration-editor-desktop.svg" alt="editor">
           </div>
           <div class="design__text-wrapper">
             <div class="design__card">
@@ -140,6 +134,7 @@
         </div>
       </div>
     </section>
+    
     <section class="laptop">
       <div class="laptop__container">
         <div class="laptop__content-container">
@@ -167,7 +162,7 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="footer_column">
-        <img src="./public/images/logo.svg" alt="logo" class="footer_logo">
+        <img src="/images/logo.svg" alt="logo" class="footer_logo">
       </div>
       <div class="footer_column">
         <nav>
