@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.min.css">
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script type="module" crossorigin src="/assets/index-CNVyi9H-.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CqitHUrL.css">
+</head>
+<body  onscroll="getScrollPosition()">
+  <header class="prim-nav">
+    <nav class="prim-nav__nav">
+        <div class="prim-nav__logo-container">
+          <img class="prim-nav__logo" src="/images/logo.svg" alt="logo">
+        </div>
+        
+        <div class="prim-nav__nav-toggle" id="nav-toggle">
+          <i class="ri-menu-line nav__burger"></i>
+          <i class="ri-close-line nav__close"></i>
+        </div>
+      
+      <div class="prim-nav__menu" id="prim-nav__menu" >
+        <ul class="prim-nav__list" >
+          <li class="prim-nav__dropdown-container">
+            <button type="button" class="prim-nav__dropdown" data-id="1">
+              <span>Product</span>    <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle hide--on-desktop" data-id="1" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle show--on-desktop" data-id="1" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+            </button>
+          
+            <ul class="prim-nav__dropdown-list" id="1">
+              <li><a class="prim-nav__dropdown-link" href="#">Overview</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Pricing</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Marketplace</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Features</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Integrations</a></li>
+            </ul>
+          </li>
+
+          <li class="prim-nav__dropdown-container">
+            <button type="button" class="prim-nav__dropdown" data-id="2">
+              <span>Company</span> <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle hide--on-desktop" data-id="2" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle show--on-desktop" data-id="2" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+            </button>
+          
+            <ul class="prim-nav__dropdown-list" id="2">
+              <li><a class="prim-nav__dropdown-link" href="#">About</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Team</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Blog</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Careers</a></li>
+            </ul>
+          </li>
+          <li class="prim-nav__dropdown-container">
+            <button type="button" class="prim-nav__dropdown" data-id="3">
+              <span>Connect</span> <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle hide--on-desktop" data-id="3" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle show--on-desktop" data-id="3" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
+            </button>
+          
+            <ul class="prim-nav__dropdown-list" id="3">
+              <li><a class="prim-nav__dropdown-link" href="#">Contact</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">Newsletter</a></li>
+              <li><a class="prim-nav__dropdown-link" href="#">LinkedIn</a></li>
+            </ul>
+          </li>
+        </ul>  
+        <hr>
+          <div class="prim-nav__button-container">
+            <a class="button login__button" href="">Login</a>
+            <a class="button button--gradient button--text-light signup__button" href="">Sign Up</a>
+          </div>    
+      </div>
+      
+      
+    </nav>
+  </header>
+  <section class="intro">
+    
+        <div class="intro__container">
+          <h1 class="intro__title">A modern publishing platform</h1>
+          <p class="intro__subtitle">Grow your audience and build your online brand</p>
+          <div class="intro__button-wrapper">
+            <a class="button button--bg-light button--text-red button--bdr-light intro__start-button" href="http://">Start for Free</a>
+            <a class="button button--text-light button--bdr-light intro__lm-button" href="http://">Learn More</a>
+          </div>
+        </div>
+          <img class="intro__bg-image" src="/images/bg-pattern-intro-desktop.svg" alt="Intro" />
+  </section>
+  <main>
+    <section class="design">
+      <div class="design__container">
+        <h2 class="design__heading">Designed for the future</h2>
+        <div class="design__content-container">
+          <div class="design__image-wrapper">
+        <img class="design__image" src="/images/illustration-editor-desktop.svg" alt="editor">
+          </div>
+          <div class="design__text-wrapper">
+            <div class="design__card">
+              <h3 class="design__card-title">Introducing an extensible editor</h3>
+              <p class="design__card-text">
+                Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. 
+                The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, 
+                videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or 
+                change the looks of a blog.
+              </p>
+            </div>
+            <div class="design__card">
+              <h3 class="design__card-title">Robust content management</h3>
+              <p class="design__card-text">
+                Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+                by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+    <section class="infra">
+      <div class="infra__container">
+        <div class="infra__image-wrapper">
+          <img class="infra__image" src="/images/illustration-phones.svg" alt="phones">
+        </div>
+        <div class="infra__text-wrapper">
+          <h3 class="infra__heading">State of the Art Infrastructure</h3>
+          <p class="infra__text">
+            With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+  This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+          </p>
+          <img class="infra__text-image-circle" src="/images/bg-pattern-circles-1.svg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="laptop">
+      <div class="laptop__container">
+        <div class="laptop__content-container">
+          <div class="laptop__image-wrapper">
+        <img class="laptop__image-mobile" src="/images/illustration-laptop-mobile.svg" alt="laptop">
+        <img class="laptop__image-desktop" src="/images/illustration-laptop-desktop.svg" alt="laptop">
+          </div>
+          <div class="laptop__text-wrapper">
+            <div class="laptop__card">
+              <h3 class="laptop__card-title">Free, open, simple</h3>
+              <p class="laptop__card-text">  
+                Blogr is a free and open source application backed by a large community of helpful developers. It supports features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+              </p>
+            </div>
+            <div class="laptop__card">
+              <h3 class="laptop__card-title">Powerful tooling</h3>
+              <p class="laptop__card-text">
+                Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but capable of producing even the most complicated sites.
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer_column">
+        <img src="/images/logo.svg" alt="logo" class="footer_logo">
+      </div>
+      <div class="footer_column">
+        <nav>
+          <ul class="footer__nav-list">
+            <li><h4 class="footer__nav-title">Product</h4></li>
+            <li><a class="footer__link" href="">Overview</a></li>
+            <li><a class="footer__link" href="">Pricing</a></li>
+            <li><a class="footer__link" href="">Marketplace</a></li>
+            <li><a class="footer__link" href="">Features</a></li>
+            <li><a class="footer__link" href="">Integrations</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer_column">
+        <nav>
+          <ul class="footer__nav-list">
+            <li><h4 class="footer__nav-title">Company</h4></li>
+            <li><a class="footer__link" href="">About</a></li>
+            <li><a class="footer__link" href="">Team</a></li>
+            <li><a class="footer__link" href="">Blog</a></li>
+            <li><a class="footer__link" href="">Careers</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer_column">
+        <nav>
+          <ul class="footer__nav-list">
+            <li><h4 class="footer__nav-title">Connect</h4></li>
+            <li><a class="footer__link" href="">Contact</a></li>
+            <li><a class="footer__link" href="">Newsletter</a></li>
+            <li><a class="footer__link" href="">LinkedIn</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
+  
+  <script src="./main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
