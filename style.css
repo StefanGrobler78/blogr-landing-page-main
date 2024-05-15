@@ -512,11 +512,12 @@ main{
     position: relative;
     color: var(--white);
     margin-bottom: 3rem;
+    z-index: 200;
 }
 .infra__image{
     width: 100%;
     margin-bottom: -150px;
-    z-index: 1600;
+    z-index: 200;
     position: absolute;
     top: -30%;
 }
@@ -526,7 +527,7 @@ main{
     height: 80vh;
     overflow: hidden;
     position: relative;
-    z-index: 800;
+    z-index: 100;
     display: grid;
     place-items: center;
     align-content: center;
@@ -556,7 +557,7 @@ main{
     left: 50%;
     margin-left: -300px;
     width: 600px;
-    z-index: 2000;
+    z-index: 1000;
 }
 @media screen and (min-width: 576px){
     .infra{
@@ -619,18 +620,7 @@ main{
 .laptop {
     margin-bottom: 3rem;
 }
-.footer {
-    background-color: var(--very-dark-black-blue);
-    border-radius: 0 100px 0 0;
-}
-.footer__container{
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    gap: 1rem;
-    text-align: center;
-    padding-block: 3rem;
-}
+
 @media screen and (min-width: 768px){
     .laptop{
         margin-top: 9rem;
@@ -688,6 +678,18 @@ main{
         display: none;
     }
 }
+.footer {
+    background-color: var(--very-dark-black-blue);
+    border-radius: 0 100px 0 0;
+}
+.footer__container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 1rem;
+    text-align: center;
+    padding-block: 4rem;
+}
 .footer_column{
     margin-bottom: 1rem;
 }
@@ -709,3 +711,18 @@ main{
     text-decoration: underline;
 }
 
+@media screen and (min-width: 576px){
+    .footer{
+        padding-inline: clamp(1rem, 4vw, 4rem);
+    }
+    .footer__container{
+        max-width: var(--max-width);
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        margin: 0 auto;
+        text-align: left;
+        padding-inline: 1rem;
+    } 
+}
