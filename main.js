@@ -47,3 +47,16 @@ buttons.forEach((button) => {
        })
     })
 })
+
+// Change header Background Color
+
+function getScrollPosition() {
+   let scroll = window.scrollY
+   if (scroll >= 100) {
+        let navBar = document.querySelector('.prim-nav')
+        navBar.style.background = "#ff525d"
+   }else {
+        let navBar = document.querySelector('.prim-nav')
+        navBar.style.background = "transparent"
+   }
+}

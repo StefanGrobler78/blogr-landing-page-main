@@ -16,7 +16,7 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body  onscroll="getScrollPosition()">
   <header class="prim-nav">
     <nav class="prim-nav__nav">
         <div class="prim-nav__logo-container">
@@ -32,7 +32,8 @@
         <ul class="prim-nav__list" >
           <li class="prim-nav__dropdown-container">
             <button type="button" class="prim-nav__dropdown" data-id="1">
-              <span>Product</span>    <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle" data-id="1" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+              <span>Product</span>    <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle hide--on-desktop" data-id="1" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle show--on-desktop" data-id="1" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
             </button>
           
             <ul class="prim-nav__dropdown-list" id="1">
@@ -46,7 +47,9 @@
 
           <li class="prim-nav__dropdown-container">
             <button type="button" class="prim-nav__dropdown" data-id="2">
-              <span>Company</span> <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle" data-id="2" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+              <span>Company</span> <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle hide--on-desktop" data-id="2" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle show--on-desktop" data-id="2" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
             </button>
           
             <ul class="prim-nav__dropdown-list" id="2">
@@ -58,7 +61,8 @@
           </li>
           <li class="prim-nav__dropdown-container">
             <button type="button" class="prim-nav__dropdown" data-id="3">
-              <span>Connect</span> <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle" data-id="3" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+              <span>Connect</span> <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle hide--on-desktop" data-id="3" width="10" height="7"><path fill="none" stroke="#FF7B86" stroke-width="2" d="M1 1l4 4 4-4"/></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" class="iconToggle show--on-desktop" data-id="3" width="10" height="7"><path fill="none" stroke="#FFF" stroke-width="2" opacity=".75" d="M1 1l4 4 4-4"/></svg>
             </button>
           
             <ul class="prim-nav__dropdown-list" id="3">
@@ -79,6 +83,7 @@
     </nav>
   </header>
   <section class="intro">
+    
         <div class="intro__container">
           <h1 class="intro__title">A modern publishing platform</h1>
           <p class="intro__subtitle">Grow your audience and build your online brand</p>
@@ -118,7 +123,6 @@
         </div>
         </div>
     </section>
-
     <section class="infra">
       <div class="infra__container">
         <div class="infra__image-wrapper">
@@ -134,12 +138,13 @@
         </div>
       </div>
     </section>
-    
+
     <section class="laptop">
       <div class="laptop__container">
         <div class="laptop__content-container">
           <div class="laptop__image-wrapper">
-        <img class="laptop__image" src="/images/illustration-laptop-mobile.svg" alt="laptop">
+        <img class="laptop__image-mobile" src="/images/illustration-laptop-mobile.svg" alt="laptop">
+        <img class="laptop__image-desktop" src="/images/illustration-laptop-desktop.svg" alt="laptop">
           </div>
           <div class="laptop__text-wrapper">
             <div class="laptop__card">
