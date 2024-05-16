@@ -380,7 +380,7 @@ hr{
         rotate: 30deg;
     }
     .design__image-wrapper{
-        background-image: url('./public/images/illustration-editor-mobile.svg');
+        background-image: url('/images/illustration-editor-mobile.svg');
         width: 100%;
         background-repeat: no-repeat;
         aspect-ratio: 1/1;
